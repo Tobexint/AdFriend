@@ -3,7 +3,7 @@
   "name": "AdFriend",
   "version": "1.0",
   "description": "Replaces ads with positive content widgets.",
-  "permissions": ["scripting", "storage", "activeTab", "declarativeNetRequest"],
+  "permissions": ["scripting", "storage", "activeTab", "declarativeNetRequest","background"],
   "host_permissions": ["<all_urls>", "*://*/*", "https://dynamic-cdn.openweb.com/*"],
   "background": {
     "service_worker": "background.js",
