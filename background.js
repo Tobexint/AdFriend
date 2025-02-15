@@ -8,12 +8,6 @@ chrome.runtime.onStartup.addListener(() => {
     console.log("Service worker started");
 });
 
-//chrome.webRequest.onBeforeRequest.addListener(
-  //  function (details) { return { cancel: true }; },
-    //{ urls: ["*://dynamic-cdn.openweb.com/*"] },
-    //["blocking"]
-//);
-
 /*
  * This block uses chrome.declarativeNetRequest to dynamically update filtering rules.
  * - Removes any existing rule with ID 1.
