@@ -34,7 +34,6 @@ AdFriend/
 │── popup.css             # Styles for settings UI
 │── content.js            # Main script for detecting & replacing ads
 │── background.js         # Background service worker for ad blocking
-│── icons/                # Extension icons
 └── README.md             # Project documentation
 ```
 
