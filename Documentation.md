@@ -1,10 +1,10 @@
-### AdFriend Chrome Extension - Documentation
+## AdFriend Chrome Extension - Documentation
 
-## Overview
+### Overview
 
 AdFriend is a Chrome extension that replaces intrusive advertisements with positive and meaningful content. Users can customize what replaces the ads, choosing between motivational quotes, activity reminders, or random uplifting messages.
 
-## Features
+### Features
 
 Ad Blocking: Identifies and removes ads from web pages.
 
@@ -16,7 +16,7 @@ Dynamic Content Loading: Monitors and removes newly loaded ads.
 
 CDN Ad Blocking: Blocks ads originating from external ad servers.
 
-## Installation
+### Installation
 
 Clone the repository or download the source code.
 
@@ -28,7 +28,7 @@ Click Load unpacked and select the extension folder.
 
 The extension will now be active and ready for use.
 
-## File Structure
+### File Structure
 
 AdFriend/
 ├── manifest.json           # Extension metadata and permissions
@@ -59,7 +59,7 @@ background.js
 
 Handles background tasks, such as blocking specific ad URLs via chrome.declarativeNetRequest.
 
-## Permissions Required
+### Permissions Required
 
 storage – To save user settings.
 
@@ -69,7 +69,7 @@ declarativeNetRequest – To block ad requests.
 
 scripting – To inject content scripts dynamically.
 
-## How It Works
+### How It Works
 
 The popup UI lets users select a replacement widget.
 
@@ -79,21 +79,21 @@ The background script blocks ad requests from certain ad networks.
 
 Changes are stored using chrome.storage.sync, so they persist across browser sessions.
 
-## Handling Dynamic Ads
+### Handling Dynamic Ads
 
 The extension uses a MutationObserver to monitor changes in the DOM and replace newly loaded ads.
 
-## Blocking CDN Ads
+### Blocking CDN Ads
 
 The background script blocks requests from known ad-serving domains using Chrome's declarativeNetRequest API.
 
-## Error Handling
+### Error Handling
 
 If an error occurs while accessing chrome.storage.sync, it is logged to the console.
 
 try-catch blocks are used where necessary to prevent crashes.
 
-## Future Improvements
+### Future Improvements
 
 Add more customization options (e.g., user-defined messages).
 
@@ -101,7 +101,7 @@ Improve ad detection accuracy.
 
 Support additional browsers.
 
-## Contribution
+### Contribution
 
 Fork the repository.
 
@@ -111,10 +111,10 @@ Commit your changes.
 
 Push to your branch and create a pull request.
 
-## License
+### License
 
 This project is licensed under the MIT License.
 
-## Contact
+### Contact
 
 For support, reach out via tobexint@gmail.com .
